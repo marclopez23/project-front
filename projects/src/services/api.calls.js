@@ -8,13 +8,14 @@ const api = axios.create({
 
 export const getProjects = () => api.get("/");
 
-export const getProject = () => api.get("/project/:projectId");
+export const getProject = (projectId) => api.get(`/project/${projectId}`);
 
-export const createProject = () => api.post("/");
+export const createProject = (formData) => api.post("/new-project", formData);
 
-export const deleteProject = () => api.delete("/project/:projectId");
+export const deleteProject = (projectId) => api.delete(`/project/${projectId}`);
 
-export const updateProject = () => api.patch("/project/:projectId");
+export const updateProject = (projectId, data) =>
+  api.patch(`/project/${projectId}`, data);
 
 //Tasks calls
 

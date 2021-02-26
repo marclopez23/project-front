@@ -1,0 +1,12 @@
+.project {
+  max-width: 1000px;
+  padding: 1em;
+  margin: 0 auto;
+}
+.project .btn {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  min-width: unset;
+  padding: 1em 2em;
+}

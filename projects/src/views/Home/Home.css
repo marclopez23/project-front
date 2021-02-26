@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-around;
+}
+
+.projects article {
+  width: 25%;
+  margin: 1em 0.5em;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  background-color: rgb(243, 218, 186);
+  border: unset;
+  font-size: 0.75em;
+  color: black;
+  min-width: 30%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
